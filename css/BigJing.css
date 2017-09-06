@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a img{border: none;border: 0;}
+html,body {width: 100%;height: 100%;font-size:100px;font-family: "黑体";background-color: #000;}
+.container{width: 100%;height: 100%;position: relative;}
+.container .DetailTop{width: 100%;height:68.059%;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;}
+.container .DetailTop a{ position:relative;width:6.48rem;height:4.54rem;display: block; overflow:hidden;}
+.container .DetailTop img.DetailImg{width:6.48rem;height:4.54rem;display: block; position:absolute;left:0;top: 0;}

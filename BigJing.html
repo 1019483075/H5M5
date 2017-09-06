@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<title>用户介绍列表详情</title>
+		<link type="text/css" rel="stylesheet" href="css/common.css"/>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/touch-0.2.14.min.js"></script>
+		<script src="js/jquery.ferro.ferroMenu-1.2.3.min.js" type="text/javascript"></script>
+		<link type="text/css" rel="stylesheet" href="css/UserDetails.css"/>
+		<script type="text/javascript" src="js/rem.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="DetailTop">
+				<a  id="webpage" ><!-- href="BigJing.html" -->
+					<img src="img/typeIntroduction.png" alt="用户类型介绍" class="DetailImg"/>
+				</a>
+			</div>
+		</div>
+		<ul id="nav">
+			<li class="desktop one" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s; transform: translate(0px, 0px) "><a href="homePage.html"><img src="img/home-pic.png"></a></li>
+			<li class="desktop two" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s; transform: translate(0px, 0px) rotate(-720deg);"><a href="Navigation.html"><img src="img/appointment-pic.png"></a></li>
+			<li class="desktop three" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s; transform: translate(0px, 0px) rotate(-720deg);"><a href="album.html"><img src="img/panorama-pic.png"></a></li>
+			<li class="desktop four" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s; transform: translate(0px, 0px) rotate(-720deg);"><a href="makeHouseType.html"><img src="img/model-pic.png"></a></li>
+			<li class="desktop five" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s; transform: translate(0px, 0px) rotate(-720deg);"><a href="homePage.html"><img src="img/dynamic-pic.png"></a></li>
+			<li class="desktop six" style="opacity: 0; display: inline-block; position: absolute; z-index: 999; top: 584.5px; left: 30px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.05s; transform: translate(0px, 0px) rotate(-720deg);"><a href="Introduction.html"><img src="img/introduce.png"></a></li>
+		</ul>
+		<script type="text/javascript">
+			var currentIndex = 0;
+				var currentId = "camera";
+				$(document).ready(function() {
+					if(sessionStorage.getItem("navPosition")){
+						$("#nav").ferroMenu({
+							position 	: sessionStorage.getItem("navPosition"),
+							delay 		: 50,
+							rotation 	: 720,
+							margin		: 7
+						});
+					} else {
+						$("#nav").ferroMenu({
+							position 	: "right-center",
+							delay 		: 50,
+							rotation 	: 720,
+							margin		: 15
+						});
+					}
+				});
+				function goTo(id){
+					if(obj.index > currentIndex){
+						$(".active").addClass("off");
+						$(".active").transition({
+							x : -100,
+							opacity : 0,
+							zIndex : 0
+						},600);
+					}else if(obj.index < currentIndex){
+					}
+				}
+		</script>
+	</body>
+</html>
+
+

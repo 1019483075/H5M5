@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0;border: 0;}
+html,body {width: 100%;height: 100%;font-family: "黑体";}
+.organizmain{position:absolute;top:0;left:0;width: 100%;height:100%;background:url(../img/city.png) no-repeat;background-size:cover;-webkit-animation:organizations 2s;-moz-animation:organizations 2s;-ms-animation:organizations 2s;animation:organizations 2s;}
+.organizmain .mainAsk{width: 4.64rem;height: 8.32rem;position: absolute;top: 1.80rem;right: 0.38rem;background:url(../img/Groupb.png) no-repeat;background-size:contain;}
+.organizmain .mainAsk h3{color: #FFFFFF;font-size: 0.36rem;font-weight: bolder;position: absolute;top: 1.59rem;left: 0.54rem;font-family: "黑体";}
+.organizmain .mainAsk .askp1,.mainAsk .aksp2{font-size: 0.28rem;color:#fffdf6;position: absolute;left: 0.53rem;}
+.organizmain .mainAsk .askp1{top: 2.20rem;width:3.92rem;height:5.83rem;overflow:scroll;text-overflow:ellipsis;text-align: justify;}
+.organizmain .mainAsk .askp1::-webkit-scrollbar{width: 0;height: 0;}
+.swiper-container,.swiper-wrapper{width: 100%;height: 100%;}
+.swiper-pagination-bullet,.swiper-pagination-bullet-active{background-color:#d2a856;}	
+/*使用关键帧实现渐变效果 的兼容写法*/
+@-webkit-keyframes organizations{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes organizations{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes organizations{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes organizations{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+

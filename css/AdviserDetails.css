@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+html,body{width: 100%;height: 100%;font-size: 100px;font-family: "黑体";}
+.Advisermain{position:relative;left:0;top:0;width: 100%;height:100%;background-color: #ffffff;font-family: "黑体";-webkit-animation:Adviser 1s both;-moz-animation:Adviser 1s both;-ms-animation:Adviser 1s both;animation:Adviser 1s both;font-size: 0.32rem;}
+	.Advisermain .mainone{width:100%;height:5.0rem;background-color:#f0eff5;display:-webkit-flex;display:-moz-flex;display:flex;align-items:center;justify-content:center;/*font-size: 0.32rem;*/font-family: "黑体";position:relative;}
+	.mainone .personpho{width: 2.78rem;height: 2.82rem;border-radius: 50%;border:2px solid #d2a856;-webkit-animation:Adviser 0.5s 1.25s both;-moz-animation:Adviser 0.5s 1.25s both;-ms-animation:Adviser 0.5s 1.25s both;animation:Adviser 0.5s 1.25s both;}
+	.mainone .personpho img{width: 100%;height: 100%;display: block;border-radius: 50%;}
+    .mainone .number,.mainone .chuckles{width: 1.14rem;height: 1.14rem;border-radius: 50%;background-color:#d1a850;display:-webkit-flex;display:-moz-flex;display:flex;align-items:center;justify-content:center;opacity: 0;}
+    /*animation css*/
+    .mainone .number{-webkit-animation:Adviser 0.5s 1.5s both;-moz-animation:Adviser 0.5s 1.5s both;-ms-animation:Adviser 0.5s 1.5s both;animation:Adviser 0.5s 1.5s both;}
+    .mainone .chuckles{-webkit-animation:Adviser 0.5s 1.75s both;-moz-animation:Adviser 0.5s 1.75s both;-ms-animation:Adviser 0.5s 1.75s both;animation:Adviser 0.5s 1.75s both;}
+	.mainone .number img{display: block;width:0.60rem;height: 0.71rem;}
+	.mainone .chuckles img{display: block;width: 0.64rem;height: 0.52rem;}
+	.mainone .personName{clear:both;position: absolute;bottom: 0.56rem;left: 42.66666667%;-webkit-animation:Adviser 0.5s 2s both;-moz-animation:Adviser 0.5s 2s both;-ms-animation:Adviser 0.5s 2s both;animation:Adviser 0.5s 2s both;}
+.Advisermain .aboutask{width: 100%;height:0.92rem;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:space-between;color: rgb(255,255,255);/*font-size: 0.32rem;*/}
+	.aboutask .aboutaskL,.aboutask .aboutaskR{flex-grow:1;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;}
+	.aboutask .aboutaskL{background: url(../img/RectangleCopy.png) no-repeat; background-size: contain;width: 0;-webkit-animation:Adviser 0.5s 2.25s both;-moz-animation:Adviser 0.5s 2.25s both;-ms-animation:Adviser 0.5s 2.25s both;animation:Adviser 0.5s 2.25s both;}
+		      .aboutaskL img{width: 0.31rem;height: 0.30rem;margin-right: 0.12rem;}
+	.aboutask .aboutaskR{background: url(../img/RectangleCopy2.png) no-repeat; background-size: contain;width: 0;-webkit-animation:Adviser 0.5s 2.5s both;-moz-animation:Adviser 0.5s 2.5s both;-ms-animation:Adviser 0.5s 2.5s both;animation:Adviser 0.5s 2.5s both;}
+.Advisermain .connection{width: 84.4%;margin-left: 7.8%;}
+.Advisermain .connection{width: 84.4%;margin-left: 7.8%;}
+	.connection ul{margin-top: 0.82rem;}
+	.connection ul li{width: 100%;height: 1.12rem;border-bottom: 2px solid #ceced0;list-style: none;-webkit-animation:Adviser 0.5s 2.75s both;-moz-animation:Adviser 0.5s 2.75s both;-ms-animation:Adviser 0.5s 2.75s both;animation:Adviser 0.5s 2.75s both;}
+	.connection ul li:nth-child(1){-webkit-animation-delay: 3.0s;}
+	.connection ul li:nth-child(2){-webkit-animation-delay: 3.25s;}
+	.connection ul li:nth-child(3){-webkit-animation-delay: 3.45s;}
+	.connection ul li p:nth-of-type(1){color:#7f7d7e;margin-bottom:0.22rem;padding-top: 0.25rem;font-size: 0.20rem;}
+	/*.connection ul li p:nth-of-type(2){color:#010101;font-size: 0.25rem;}*/
+	.connection ul li p.p2{color:#010101;font-size: 0.25rem;}
+.Advisermain .circle{position: absolute;left: 0;right: 0;top: 0;bottom: 0;}
+/*--下面是渐显的效果--*/
+@-webkit-keyframes Adviser{
+	from{opacity: 0;}
+	to{opacity: 1;}ss
+}
+@-moz-keyframes Adviser{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes Adviser{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes Adviser{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

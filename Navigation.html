@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>导航页</title>
+	<link rel="stylesheet" type="text/css" href="css/Navigation.css">
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script></script>
+</head>
+<body>
+	<div class="main">	
+		<div class="content">
+			<div class="content-main">
+				<div class="content-building building">
+					<img src="img/building.png">
+				</div>
+				<div class="content-Hexagon Hexagon">
+					<!--链接开始 -->
+					<div class="content-home">
+						<a href="organizations.html">
+							<div class="content-home-txt">
+								<p>公司</p>
+								<p>首页</p>
+							</div>
+							<div class="content-home-pic">
+								<img src="img/home-pic.png" alt="公司首页" class="organizations"/>
+							</div>
+						</a>
+					</div>
+					<div class="content-introduce">
+						<a href="Introduction.html">
+							<div class="content-introduce-txt">
+								<p>楼盘</p>
+								<p>介绍</p>
+							</div>
+							<div class="content-introduce-pic">
+								<img src="img/introduce.png" alt="楼盘介绍" class="Introduction"/>
+							</div>
+						</a>
+					</div>
+					<div class="content-dynamic">
+						<a href="AroundHelp.html">
+							<div class="content-dynamic-txt">
+								<p>楼盘</p>
+								<p>动态</p>
+							</div>
+							<div class="content-dynamic-pic">
+								<img src="img/dynamic-pic.png" alt="楼盘动态" class="AroundHelpmain"/>
+							</div>
+						</a>
+					</div>
+					<div class="content-model">
+						<a href="makeHouseType.html">
+							<div class="content-model-pic">
+									<img src="img/model-pic.png" alt="户型介绍" class="houseType"/>
+							</div>
+							<div class="content-model-txt">
+								<p>户型</p>
+								<p>介绍</p>
+							</div>
+						</a>
+					</div>
+					<div class="content-panorama">
+						<a href="album.html">
+							<div class="content-panorama-pic">
+								<img src="img/panorama-pic.png" alt="全景看房" class="album"/>
+							</div>
+							<div class="content-panorama-txt">
+								<p>全景</p>
+								<p>看房</p>
+							</div>
+						</a>
+					</div>
+					<div class="content-appointment">
+						<a href="appointment.html">
+							<div class="content-appointment-pic">
+								<img src="img/appointment-pic.png" alt="预约看房" class="appointmain"/>
+							</div>
+							<div class="content-appointment-txt">
+								<p>预约</p>
+								<p>看房</p>
+							</div>
+						</a>
+					</div>
+					<!-- 链接结束 -->
+				</div>
+				<div class="content-circle"></div>
+				<!-- 旋转开始 -->
+				<div class="content-rotate cirleRotate"></div>
+				<!-- 旋转结束 -->
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom-logo">
+				<div class="bottom-logo-left"></div>
+				<div class="bottom-logo-center"></div>
+				<div class="bottom-logo-right"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		//下面是事件监听
+//		var Hexagon=document.getElementsByClassName("Hexagon")[0];
+//		var cirleRotate= document.getElementsByClassName("cirleRotate")[0];
+//		if (Hexagon .addEventListener) 
+//		{
+//		    Hexagon.addEventListener("webkitAnimationEnd",function(){
+//		    cirleRotate.style="-webkit-animation:rotate 4s linear infinite both;-moz-animation:rotate 4s linear infinite both;-ms-animation:rotate 4s linear infinite both;animation:rotate 4s linear infinite both;"
+//		    });
+//		} else if (Hexagon.attachEvent)
+//		{
+//		    Hexagon.attachEvent("webkitAnimationEnd",function(){
+//		    cirleRotate.style="-webkit-animation:rotate 4s linear infinite both;-moz-animation:rotate 4s linear infinite both;-ms-animation:rotate 4s linear infinite both;animation:rotate 4s linear infinite both;"
+//		    });
+//		}
+		setTimeout(function(){
+			$(".cirleRotate").addClass("runCirle");
+		},3000)
+		
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{margin: 0;padding: 0}
+a{border:0;outline:none;border: none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;text-decoration: none;color:#d2a856 ;}
+a img{border: none;border: 0;}
+html,body{width: 100%;height: 100%;font-size: 100px;font-family: "黑体";}
+.main{width: 100%;height: 100%;-webkit-animation:myfirst 0.25s both;-moz-animation: myfirst 0.25s both;-ms-animation:myfirst 0.25s both;animation:myfirst 0.25s both;}
+.content{width:100%;height:9.5rem;color: #D1A84F;font-size:0.14rem;position: relative;font-family: "黑体";}
+.content-main{width:100%;height:8.24rem;position:absolute;left:0;bottom: 0;}
+/*最里层图片*/
+.content-main .content-building{width:4.24rem;height:4.24rem;border-radius:100%;-webkit-border-radius: 100%;position:absolute;top:2.03rem;right:1.65rem;z-index: 999;border:1px solid #808080;-webkit-animation:myfirst 0.5s 1.75s both;-moz-animation:myfirst 0.5s 1.75s both;-ms-animation:myfirst 0.5s 1.75s both;animation:myfirst 0.5s 1.75s both;}
+.content-main .content-building img{/*width:4.22rem;height:4.22rem;*/width: 100%;height: 100%;border-radius:100%;-webkit-border-radius: 100%;}
+/*六边形*/
+.content-main .content-Hexagon{width:4.42rem;height:5.14rem;background-image: url(../img/Hexagon.png);background-size:contain;position:absolute;top:1.55rem;right:1.55rem;-webkit-animation:myfirst 0.5s 2.75s both;-moz-animation: myfirst 0.5s 2.75s both;-ms-animation:myfirst 0.5s 2.75s both;animation:myfirst 0.5s 2.75s both;z-index: 22;}
+.content-main .content-Hexagon span{width:0.46rem;height:0.46rem;/*border-radius:50%;*/display: block;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;/*background-size:contain;*/;background-size: cover;}
+/*公司首页链接*/
+.content-main .content-Hexagon .content-home .content-home-pic,.content-main .content-Hexagon .content-introduce .content-introduce-pic,.content-main .content-Hexagon .content-dynamic .content-dynamic-pic,.content-main .content-Hexagon .content-model .content-model-pic,.content-main .content-Hexagon .content-panorama .content-panorama-pic,.content-main .content-Hexagon .content-appointment .content-appointment-pic{display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;justify-content: center;-webkit-justify-content: center;align-items: center;-webkit-align-items: center;}
+.content-main .content-Hexagon .content-home{width:0.7rem;height:1.58rem;position:absolute;left:1.87rem;top:-1.24rem;overflow: hidden;z-index:999}
+.content-main .content-Hexagon .content-home .content-home-txt{width:0.67rem;height:0.72rem;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-home .content-home-pic{width:0.67rem;height:0.67rem;border-radius:100%;-webkit-border-radius: 100%;margin-top: 0.20rem;position:relative;background-color: #d2a856;}
+.content-main .content-Hexagon .content-home .content-home-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+/*楼盘介绍链接*/
+.content-main .content-Hexagon .content-introduce{width:1.55rem;height:0.72rem;position:absolute;top:0.91rem;left:-1.18rem;z-index:999}
+.content-main .content-Hexagon .content-introduce .content-introduce-txt{width:0.67rem;height:0.67rem;float:left;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-introduce .content-introduce-pic{width:0.67rem;height:0.67rem;border-radius:100%;-webkit-border-radius: 100%;background-color:#d2a856;background-position: center center;margin-left: 0.2rem;float:left;position:relative;}
+.content-main .content-Hexagon .content-introduce .content-introduce-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+/*楼盘动态链接*/
+.content-main .content-Hexagon .content-dynamic{width:1.55rem;height:0.72rem;position:absolute;top:3.49rem;left:-1.18rem;z-index:999}
+.content-main .content-Hexagon .content-dynamic .content-dynamic-txt{width:0.67rem;height:0.67rem;float:left;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-dynamic .content-dynamic-pic{width:0.67rem;height:0.67rem;border-radius:100%;-webkit-border-radius: 100%;background-color:#d2a856;background-position: center center;margin-left: 0.2rem;float:left;position:relative}
+.content-main .content-Hexagon .content-dynamic .content-dynamic-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+/*户型介绍链接*/
+.content-main .content-Hexagon .content-model{width:0.7rem;height:1.58rem;position:absolute;left:1.87rem;bottom:-1.24rem;z-index:999}
+.content-main .content-Hexagon .content-model .content-model-txt{width:0.67rem;height:0.72rem;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-model .content-model-pic{width:0.67rem;height:0.67rem;border-radius:100%;-webkit-border-radius: 100%;background-color:#d2a856;background-position: center center;margin-bottom: 0.2rem;position:relative;}
+.content-main .content-Hexagon .content-model .content-model-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+/*全景看房链接*/
+.content-main .content-Hexagon .content-panorama{width:1.55rem;height:0.72rem;position:absolute;top:3.49rem;right:-1.18rem;z-index:999}
+.content-main .content-Hexagon .content-panorama .content-panorama-txt{width:0.67rem;height:0.67rem;float:left;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-panorama .content-panorama-pic{width:0.67rem;height:0.67rem;border-radius:100%;-webkit-border-radius: 100%;background-color:#d2a856;background-position: center center;margin-right: 0.2rem;float:left;position:relative}
+.content-main .content-Hexagon .content-panorama .content-panorama-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+/*预约看房链接*/
+.content-main .content-Hexagon .content-appointment{width:1.55rem;height:0.72rem;position:absolute;top:0.91rem;right:-1.18rem;z-index:999}
+.content-main .content-Hexagon .content-appointment .content-appointment-txt{width:0.67rem;height:0.67rem;float:left;font-size: 0.30rem;}
+.content-main .content-Hexagon .content-appointment .content-appointment-pic{width:0.67rem;height:0.67rem;border-radius:100%;background-color:#d2a856;background-position: center center;margin-right: 0.2rem;float:left;position:relative}
+.content-main .content-Hexagon .content-appointment .content-appointment-pic img{width: 0.46rem;height: 0.46rem;display: block;}
+
+/*外圆*/
+.content-main .content-circle{width:5.12rem;height:5.12rem;background-image: url(../img/circle.png);background-size:contain;position:absolute;top:1.55rem;right:1.2rem;-webkit-animation:myfirst 0.5s 2.25s both;-moz-animation: myfirst 0.5s 2.25s both;-ms-animation:myfirst 0.5s 2.25s both;animation:myfirst 0.5s 2.25s both;}
+/*旋转图形*/
+.content-main 
+.content-rotate{width:5.18rem;height:4.06rem;background-image:url(../img/rotate.png);background-size:contain;position:absolute;top:2.03rem;right:1.2rem;-webkit-animation:changes 1s 0.5s linear both;-moz-animation:changes 1s 0.5s linear both;-ms-animation:changes 1s 0.5s linear both;animation:changes 1s 0.5s linear both;}
+/*旋转图片的第二个动画*/
+.content-main 
+.runCirle{width:5.18rem;height:4.06rem;background-image:url(../img/rotate.png);background-size:contain;position:absolute;top:2.03rem;right:1.2rem;-webkit-animation:rotate 3s linear infinite both;-moz-animation:rotate 3s linear infinite both;-ms-animation:rotate 3s infinite linear infinite both;animation:rotate 3s   infinite linear both;}
+/*底部*/
+.bottom{width:100%;height:2.55rem;position:relative;}
+.bottom .bottom-logo{width:5.19rem;height:0.31rem;position:absolute;bottom:1.92rem;right:1.08rem;}
+.bottom .bottom-logo .bottom-logo-left,.bottom .bottom-logo .bottom-logo-right{width:0.6rem;height:0.04rem;background-image:url(../img/bottom-logo-2.png);background-size:contain;}
+.bottom .bottom-logo .bottom-logo-left{position:absolute;left:0;top:0.14rem;}
+.bottom .bottom-logo .bottom-logo-right{position:absolute;right:0;top:0.14rem;}
+.bottom .bottom-logo .bottom-logo-center{width:3.74rem;height:0.2rem;position:absolute;top:0.05rem;left:0.72rem;background-image:url(../img/bottom-logo-1.png);background-size:contain;}
+
+/*渐显*/
+@-webkit-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+/*旋转*/
+.rotate{-webkit-animation:rotate 8s infinite linear;-moz-animation: rotate 8s linear infinite;-ms-animation:rotate 8s linear infinite;animation:rotate 8s linear infinite;}
+@-webkit-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(-360deg)}
+}
+@-moz-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(-360deg)}
+}
+@-ms-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(-360deg)}
+}
+@keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(-360deg)}
+}
+/*放大*/
+@-webkit-keyframes changes{
+	from{-webkit-transform:scale(0);}
+	to{-webkit-transform:scale(1);}
+}
+@-moz-keyframes changes{
+	from{-webkit-transform:scale(0);}
+	to{-webkit-transform:scale(1);}
+}
+@-ms-keyframes changes{
+	from{-webkit-transform:scale(0);}
+	to{-webkit-transform:scale(1);}
+}
+@keyframes changes{
+	from{-webkit-transform:scale(0);}
+	to{-webkit-transform:scale(1);}
+}

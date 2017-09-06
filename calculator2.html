@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>按揭房贷计算</title>
+		<link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="calculatormain">
+			<div class="topmain">
+				<p>按揭房贷计算</p>
+				<img src="img/backT.png" alt="返回">
+			</div>
+			<div class="waysOne">
+				<div class="waysLeft">贷款方式</div>
+				<div class="waysright">
+					<button>商业</button>
+					<button>基金</button>
+					<button>组合</button>
+				</div>
+			</div>
+			<div class="waysTwo">
+				<div class="waysLeft">还款方式</div>
+				<div class="waysright">
+					<button>等额本息</button>
+					<button>等额本金</button>
+				</div>
+			</div>
+			<div class="waysTwo">
+				<div class="waysLeft">计算方式</div>
+				<div class="waysright">
+					<button>根据面积单价计算</button>
+					<button>根据贷款总额计算</button>
+				</div>
+			</div>
+			<div class="waysThree">
+				<div class="waysLeft">房屋单价</div>
+				<div class="waysright">
+					<input type="text" name="" id="" value="" placeholder="元/m"/>
+				</div>
+			</div>
+			<div class="waysFour">
+				<div class="waysLeft">房屋面积</div>
+				<div class="waysright">
+					<input type="text" class="input1"/>
+					<p class="pp1">按揭成本</p>
+					<input type="text"  value="7成" class="input2"/>
+				</div>
+			</div>
+			<div class="mortgageYears">
+				<div class="waysLeft">按揭年数</div>
+				<span>10年</span>
+				<!--此处是直尺-->
+					<input type="range" value="0" step="1" min="0" max="30" class="edge">
+				<span class="startyears">1</span>
+				<span class="allyears">30</span>
+			</div>
+			<div class="rates">
+				<div class="waysLeft">贷款利率</div>
+				<div class="waysright">
+					<input type="text" class="num1"/><span>*</span>
+					<input type="text" class="num2"/><span>=</span>
+					<input type="text" class="results"/>
+				</div>
+			</div>
+			<div class="nowrates">
+				<div class="waysLeft">当前年限基准利率:</div>
+				<span>商业</span><input type="text" class="commerce"/>
+				<span>公积金</span><input type="text" class="fund"/>
+			</div>
+			<div class="nowReckon">
+				<input type="button" value="立即计算"/>
+			</div>
+			<div class="nowResert">
+				<input type="button" value="重新开始"/>
+			</div>
+		</div>
+	</body>
+
+</html>

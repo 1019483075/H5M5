@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;border: 0;}
+html,body{width: 100%;height: 100%;font-size: 100px;font-family: "黑体";}
+.main{width: 100%;height: 100%;background-color: #ffffff;position:relative;-webkit-animation:myfirst 1s linear both;-moz-animation: myfirst 1s linear both;-ms-animation:myfirst 1s linear both;animation:myfirst 1s linear both;background: url(../img/homepage.jpg) no-repeat center center;background-size:cover;}
+.main .homemain{width:100%;height:2.0rem;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;position: fixed;margin-top:3.25rem;}
+.main .homemain img{width: 4.78rem;height:2.0rem;opacity: 0;z-index:999;}
+/*使用关键帧实现渐变效果 的兼容写法*/
+@-webkit-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes myfirst{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

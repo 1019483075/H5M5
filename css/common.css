@@ -1,0 +1,142 @@
+/*悬浮菜单css代码*/
+*{margin: 0;padding: 0;border: 0;}
+html,body {width: 100%;height: 100%;font-size: 100px;font-family: "黑体";}
+/*a{font-size:0.14rem;border:none;text-decoration:none;outline:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}*/
+a img{border: none;border: 0;outline: none;}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+} 
+
+.ferromenu-controller{
+	position:absolute;
+	display:block;
+	width:0.90rem;
+	height:0.90rem;
+	text-align:center;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	background-color: orange;
+    color:#f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-size:0.85rem;
+    line-height:0.90rem;
+    vertical-align:middle;
+    text-decoration:none; 
+    opacity: 0.8;
+    text-align: center;
+}
+/*.label{text-align: center;align:center;margin: 0 auto;font-size: 0.30rem;vertical-align: middle;margin-left:auto;margin-right:auto;}*/
+.label{font-size: 0.30rem;width: 100%;height: 100%;text-align: center;line-height:0.90rem;}
+#ferromenu-controller-1{
+	opacity: 0.7; margin-left:-20px;
+	}
+.ferromenu-controller .label{
+	-webkit-transition : all 0.2s linear;
+	-moz-transition : all 0.2s linear;
+	-ms-transition : all 0.2s linear;
+	-o-transition : all 0.2s linear;
+	transition : all 0.2s linear;
+}
+
+.ferromenu-controller.open .label{
+	-webkit-transform : rotate(45deg);
+	-moz-transform : rotate(45deg);
+	-ms-transform : rotate(45deg);
+	-o-transform : rotate(45deg);
+	transform : rotate(45deg);
+}
+
+.ferromenu-controller.desktop:hover,
+.ferromenu-controller.mobile:active{
+	background:#6e737b;
+}
+
+#nav li,#nav2 li{
+	color:#f2f2f2;
+	text-align:center;
+	/*z-index: 22;*/
+	width: 0.90rem;
+	height: 0.90rem;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+#nav li a,#nav2 li a{
+	font-size:0.30rem;
+	color:#f2f2f2;
+	text-decoration:none;
+	width:0.90rem;
+	height:0.90rem;
+	text-align: center;
+	line-height: 0.90rem;
+	-webkit-border-radius:50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	background:orange;
+	line-height:0.80rem;
+	display:block;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	font-size: 0.30rem;
+}
+/*#nav li a img,#nav2 li a img{width: 0.46rem;height: 0.46rem;display: block;}*/
+#ferromenu-controller-1
+{
+	width: 1.0rem;
+	height: 1.0rem;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;}
+#nav li a:hover,#nav2 li a:hover{background-color: gray;}
+#nav li.desktop a:hover,#nav2 li.desktop a:hover,
+#nav li.mobile a:active,#nav2 li.mobile a:active{
+	opacity:0.7;
+}
+@font-face {
+		  font-family: 'icomoon';
+		  src:  url('../fonts/icomoon.eot?u43brz');
+		  src:  url('../fonts/icomoon.eot?u43brz#iefix') format('embedded-opentype'),
+		    url('../fonts/icomoon.ttf?u43brz') format('truetype'),
+		    url('../fonts/icomoon.woff?u43brz') format('woff'),
+		    url('../fonts/icomoon.svg?u43brz#icomoon') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		
+		[class^="icon-"], [class*=" icon-"] {
+		  /* use !important to prevent issues with browser extensions that change fonts */
+		  font-family: 'icomoon' !important;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  line-height: 1;
+		
+		  /* Better Font Rendering =========== */
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		
+		.icon-plus:before {
+		  content: "\e904";
+		}
+

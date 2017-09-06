@@ -1,0 +1,133 @@
+*{margin: 0;padding:0;}
+html,body {width: 100%;height: 100%;font-size: 100px;font-family: "黑体";}
+.mortgagemain{position:absolute;left:0;top:0;width: 100%;height:100%;background-color: #ffffff;-webkit-animation:mortgage 1s both;-moz-animation:mortgage 1s both;-ms-animation:mortgage 1s both;animation:mortgage 1s both;font-size: 0.25rem;}
+.mortgagemain img.backT{width: 0.46rem;height: 0.43rem;display: block;position: absolute;top: 0.24rem;right: 0.41rem;}
+/*puiblic css*//*小圆圈定位  及人物图片定位*/
+.careers,.careersAsk,.roundtwo,.roundCenter{display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;}
+.careers .careersAsk,.careers .careersAsk .roundtwo,.careersAsk .roundtwo .roundCenter{border-radius: 50%;}
+.careers .personOne,.careers .personTwo,.careers .personThree,.careers .personFour{border-radius: 50%;border: 1px solid #D1A84F;z-index: 22;}
+.careers .personOne img,.careers .personTwo img,.careers .personThree img,.careers .personFour img{width: 100%;height:100%;display: block;border-radius: 50%;}
+.mortgagemain .careers{width: 100%;height:3.58rem;margin-top: 1.18rem;position: relative;-webkit-animation:move 1s 1.25s linear both;-moz-animation:move 1s 1.25s linear both;-ms-animation:move 1s 1.25s linear both;animation:move 1s 1.25s linear both;}
+.careers .personOne{width: 0.45rem;height: 0.45rem;position: absolute;left:2.69rem;top: 0;-webkit-animation:mortgage 0.5s 1.5s both;-moz-animation:mortgage 0.5s 1.5s both;-ms-animation:mortgage 0.5s 1.5s both;animation:mortgage 0.5s 1.5s both;}
+.careers .personTwo{width: 0.74rem;height: 0.74rem;position: absolute;left:4.55rem;top: 0;-webkit-animation:mortgage 0.5s 1.75s both;-moz-animation:mortgage 0.5s 1.75s both;-ms-animation:mortgage 0.5s 1.75s both;animation:mortgage 0.5s 1.75s both;}
+.careers .personThree{width: 0.63rem;height: 0.63rem;position: absolute;left:4.60rem;top:2.79rem;-webkit-animation:mortgage 0.5s 2s both;-moz-animation:mortgage 0.5s 2s both;-ms-animation:mortgage 0.5s 2s both;animation:mortgage 0.5s 2s both;}
+.careers .personFour{width: 0.63rem;height: 0.63rem;position: absolute;left:2.06rem;top: 1.46rem;-webkit-animation:mortgage 0.5s 2.25s both;-moz-animation:mortgage 0.5s 2.25s both;-ms-animation:mortgage 0.5s 2.25s both;animation:mortgage 0.5s 2.25s both;}
+.careers .careersAsk{width: 3.60rem;height: 3.60rem;background: url(../img/roundWrap.png) no-repeat;background-size: cover;position:relative;-webkit-animation: spinning 3s 2.5s linear infinite both;-moz-animation:spinning 3s 2.5s linear infinite both;-ms-animation:spinning 3s 2.5s linear infinite both;animation:spinning 3s 2.5s linear infinite both;}
+.careers .roundCenter{width: 1.92rem;height: 1.92rem;background: url(../img/roundCenter.png) no-repeat;background-size: cover;position: absolute;left: 2.76rem;top: 0.80rem;z-index: 99;}
+.careers .roundCenter img{width:1.14rem;height:0.64rem;}
+.careers .careersAsk img.smallOne,.careers .careersAsk img.smallTwo,.careers .careersAsk img.smallThree{width: 0.10rem;height: 0.10rem;-webkit-animation:mortgage 0.5s 2.25s both;-moz-animation:mortgage 0.5s 2.25s both;-ms-animation:mortgage 0.5s 2.25s both;animation:mortgage 0.5s 2.25s both;}
+	.careers .careersAsk img.smallOne{position: absolute;left: 0.32rem;top: 0.64rem;}
+	.careers .careersAsk img.smallTwo{position: absolute;left: 3.49rem;top: 1.35rem;}
+	.careers .careersAsk img.smallThree{position: absolute;left:1.73rem;bottom: 0.37rem;}
+	/*顾问里面的人物图片*/
+	.careers .careersAsk .roundtwo{width: 2.74rem;height: 2.74rem;background:url(../img/roundWrap2.png) no-repeat;background-size: cover;}
+/*任务介绍以及信息*/
+.mortgagemain .personAsk{width:79.6%;margin-left: 10.2%;margin-top: 0.53rem;position: relative;}
+	.personAsk ul{list-style: none;width:100%;height:5.02rem;overflow: hidden;}
+	.personAsk ul li{width: 100%;height:0.96rem;border-bottom:2px solid #cdcdcd;-webkit-animation:mortgage 0.5s 2.5s both;-moz-animation:mortgage 0.5s 2.5s both;-ms-animation:mortgage 0.5s 2.5s both;animation:mortgage 0.5s 2.5s both;}
+	.personAsk ul li:nth-child(2){-webkit-animation-delay: 3.0s;}
+	.personAsk ul li:nth-child(3){-webkit-animation-delay: 3.5s;}
+	.personAsk ul li:nth-child(4){-webkit-animation-delay: 4.0s;}
+	.personAsk ul li:nth-child(5){-webkit-animation-delay: 4.5s;}
+	.personAsk ul li div.personImg{width: 0.77rem;height:100%;float: left;}
+	.personAsk ul li div.personImg  img{width:0.74rem;height:0.74rem;display: block;border-radius: 50%;border: 2px solid #baa57a;margin-top: 0.15rem;}
+	.personAsk ul li div.personIntroduce{width: 3.90rem;height: 100%;float: left;box-sizing:border-box;padding:0.27rem 0 0 0.17rem;}
+	.personAsk ul li div.personIntroduce p:nth-of-type(1){/*font-size: 0.25rem;*/color:#040404;}
+	/*.personAsk ul li div.personIntroduce p:nth-of-type(2){font-size: 0.22rem;color:#848484;}*/
+	/*.personAsk ul li div.personIntroduce p>p{font-size: 0.22rem;color:#848484;}*/
+	.personAsk ul li div.personIntroduce p.p2{font-size: 0.22rem;color:#848484;}
+	.personAsk ul li div.personConnect{width: 1.29rem;height: 100%;float: left;}
+.mortgagemain .personAsk .personConnect img:nth-of-type(1){width: 0.50rem;height: 0.50rem;display:block;float: left;margin-top: 0.34rem;}
+.mortgagemain .personAsk .personConnect img:nth-of-type(2){width: 0.62rem;height: 0.46rem;display:block;padding-left:0.15rem;margin-top: 0.37rem;}
+.mortgagemain  .backTop{width:100%;height: 0.38rem;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;position: absolute;/*bottom:1.06rem;*/margin-top:0.33rem;margin-bottom: 0.33rem;}
+.mortgagemain  .backTop img.backImg{width: 0.72rem;height: 0.38rem;display: block;-webkit-animation:mortgage 1s 2s infinite both;-moz-animation:mortgage 1s 2s infinite  both;-ms-animation:mortgage 1s 2s infinite both;animation:mortgage 1s 2s infinite both;margin: 0 auto;}
+.mortgagemain  .circle{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+/*黄色圆球旋转*/
+@-webkit-keyframes spinning{
+	from{
+		-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-ms-transform:rotate(0deg);
+		transform: rotate(0deg);
+		}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	  }
+}
+/*渐显*/
+@-webkit-keyframes mortgage{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes mortgage{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes mortgage{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes mortgage{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+/*放大的效果*/
+@-webkit-keyframes move{
+	from{
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform:scale(0);
+		transform: scale(0);
+		}
+	to{
+		-webkit-transform:scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	  }
+}
+@-moz-keyframes move{
+	from{
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+		}
+	to{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	  }
+}
+@-ms-keyframes move{
+	from{
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+		}
+	to{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	  }
+}
+@keyframes move{
+	from{
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+		}
+	to{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	  }
+}

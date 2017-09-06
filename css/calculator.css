@@ -1,0 +1,55 @@
+/*----this is calculator css----*/
+*{margin: 0;padding: 0;}
+html,body {width: 100%;height: 100%;font-family: "黑体";}
+.calculatormain{position:absolute;top:0;left:0;width: 100%;height:100%;background-color: #ffffff;font-family: "黑体";font-size: 0.25rem;}
+.calculatormain .topmain{width: 100%;height:1.0rem;background-color:#d1a850;position: relative;}
+.calculatormain .topmain p{font-size:0.32rem;color:#fffefd;text-align: center;line-height: 1.0rem; }
+.calculatormain .topmain img{width:0.49rem;height:0.43rem;display: block;position: absolute;right: 0.40rem;top: 0.30rem;}
+.calculatormain .waysOne{margin-top:0.32rem;}
+/*pubilc css*/
+.calculatormain .waysOne .waysLeft,.calculatormain .waysOne .waysright,.calculatormain .waysTwo .waysLeft,.calculatormain .waysTwo .waysright,.calculatormain .waysThree .waysLeft,.calculatormain .waysThree .waysright,.calculatormain .waysFour .waysLeft,.calculatormain .rates .waysLeft,.calculatormain .nowrates .waysLeft,.calculatormain .nowReckon,.calculatormain .nowReckon input,.calculatormain .nowResert{display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;align-items:center;}
+.calculatormain .waysOne,.calculatormain .waysTwo,.calculatormain .waysThree,.calculatormain .waysFour,.calculatormain .rates,.calculatormain .nowrates{width: 100%;height: 0.64rem;box-sizing:border-box;padding:0 0 0 0.40rem;}
+.calculatormain .waysOne .waysLeft,.calculatormain .waysTwo .waysLeft,.calculatormain .waysThree .waysLeft,.calculatormain .waysFour .waysLeft,.calculatormain .rates .waysLeft{width:1.26rem;height: 0.64rem;float: left;}
+.calculatormain .waysOne .waysright,.calculatormain .waysTwo .waysright,.calculatormain .waysThree .waysright,.calculatormain .waysFour .waysright,.calculatormain .rates .waysright{width: 5.40rem;height: 0.64rem;float: left;}
+  .waysOne .waysright button,.waysTwo .waysright button{flex-grow:1;height: 0.64rem;width: 0;font-family: "黑体";font-size: 0.25rem;outline: none;border: none;}
+  .waysOne .waysright button:nth-of-type(1),.waysTwo .waysright button:nth-of-type(1){color:#fffff3;background-color:#d1a751;border: 1px solid #7e7d85;}
+  .waysOne .waysright button:nth-of-type(2), .waysOne .waysright button:nth-of-type(3), .waysTwo .waysright button:nth-of-type(2){border-top: 1px solid #7e7d85;border-right: 1px solid #7e7d85;border-bottom: 1px solid #7e7d85;}
+/*waysTwo*/
+.calculatormain .waysTwo{margin-top:0.24rem;}
+/*waysThree css*/
+.calculatormain .waysThree{margin-top:0.24rem;}
+.calculatormain .waysThree .waysright{border: 1px solid #7e7d85;}
+.calculatormain .waysThree .waysright input{width:100%;height:100%;background-color:#f1f0f6;border: none;outline: none;}
+/*waysFour css*/
+.calculatormain .waysFour{margin-top:0.24rem;position: relative;}
+.calculatormain .waysFour input.input1{width:2.08rem;height:0.60rem;outline: none;display: block;float: left;background-color:#f1f0f6;border: none;border: 1px solid #7e7d85;}
+.calculatormain .waysFour .pp1{line-height:0.60rem;margin-left:0.33rem;display:inline-block;float: left;}
+.calculatormain .waysFour input.input2{width:1.74rem;height:0.60rem;outline: none;display: block;float: left;background-color:#d1a751;border: none;border: 1px solid #7e7d85;position: absolute;right: 0.40rem;color:rgb(255,255,255);font-family: "黑体";text-align:center;line-height: 0.60rem;}
+/*mortgageYears css*/
+.calculatormain .mortgageYears{width:100%;height:1.94rem;box-sizing:border-box;padding:0.42rem 0 0 0.40rem;clear: both;position:relative;}
+.calculatormain .mortgageYears span:nth-of-type(1){padding-left:}
+.calculatormain .mortgageYears .waysLeft{width:1.26rem;height: 0.64rem;float: left;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:center;margin-right:0.29rem;}
+.calculatormain .mortgageYears .edge{width:6.62rem;height:0.40rem;background: url(../img/edeg.png) no-repeat;background-size:contain;position:relative;margin-left:0.10rem;-webkit-appearance:none;}
+.calculatormain .mortgageYears .edge::-webkit-slider-thumb{width:0.43rem;height:0.46rem;-webkit-appearance:none;background: url(../img/livelihood.png) no-repeat;background-size:contain;position:relative;top:0.23rem;}
+.calculatormain .mortgageYears .startyears{position: absolute;top: 1.45rem;left:0.54rem;}
+.calculatormain .mortgageYears .allyears{position: absolute;top: 1.45rem;right:0.40rem;}
+/*rates css*/
+.calculatormain .rates{position: relative;}
+.calculatormain .rates .waysright .num1,.calculatormain .rates .waysright .num2,.calculatormain .rates .waysright .results{width: 1.32rem;height:0.64rem;border: none;border: 1px solid #7e7d85;background-color:#f1f0f6;outline: none;}
+.calculatormain .rates .waysright .results{position: absolute;right:0.40rem;}
+.calculatormain .rates .waysright span:nth-of-type(1){width:0.64rem;height:0.64rem;display: inline-block;text-align:center;line-height:0.64rem;margin:0;padding: 0;}
+.calculatormain .rates .waysright span:nth-of-type(2){width:0.40rem;height:0.64rem;display: inline-block;text-align:center;line-height:0.64rem;}
+/*nowrotes css*/
+.calculatormain .nowrates{margin-top:0.25rem;position: relative;}
+.calculatormain .nowrates .waysLeft{width:2.25rem;height:0.64rem;float: left;font-size:0.25rem;} 
+.calculatormain .nowrates span:nth-of-type(1){width:0.75rem;display: inline-block;text-align:center;line-height:0.64rem;}
+.calculatormain .nowrates span:nth-of-type(2){width:1.22rem;display: inline-block;text-align:center;line-height:0.64rem;}
+.calculatormain .nowrates input:nth-of-type(1),.calculatormain .nowrates input:nth-of-type(2){width: 1.08rem;height:0.64rem;outline: none;background-color:#f1f0f6;border: none;border: 1px solid #7e7d85;}
+.calculatormain .nowrates input:nth-of-type(2){position: absolute;right: 0.40rem;}
+/*nowReckon css and nowResert css*/
+.calculatormain .nowReckon,.calculatormain .nowResert{margin-top:0.25rem;width:100%;height:0.64rem;text-align:center;line-height:0.64rem;overflow:hidden;}
+.calculatormain .nowReckon input,.calculatormain .nowResert input{width:6.70rem;height: 0.64rem;border: none;border: 1px solid #7e7d85;outline: none;font-family: "黑体";}
+.calculatormain .nowReckon input{background-color:#d1a751;color:#fff5ff;}
+.calculatormain .nowResert input{background-color:#f1f0f6;color:#06050b;}
+
+
